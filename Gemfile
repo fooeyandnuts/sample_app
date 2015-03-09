@@ -52,4 +52,7 @@ group :test do
   gem 'capybara'
   gem 'rb-fsevent', :require => false
   gem 'growl'
+  gem 'spork','1.0.0rc0'
+  gem 'guard-spork'
+  gem 'spork-rails'
 end
