@@ -36,6 +36,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # User RSpec for testing
   gem 'rspec-rails'
+  gem 'guard-rspec'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -48,4 +50,6 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'rb-fsevent', :require => false
+  gem 'growl'
 end
