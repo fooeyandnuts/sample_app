@@ -13,7 +13,7 @@ guard 'spork', :rspec_env => { 'RAILS_ENV' => 'test' } do
   watch('spec/support/')
 end
 
-guard 'rspec', :version => 2, :all_after_pass => false do
+guard 'rspec', :version => 2, cmd: "bundle exec rspec", :all_after_pass => false do
   require "guard/rspec/dsl"
   dsl = Guard::RSpec::Dsl.new(self)
 
